@@ -311,7 +311,7 @@
             "command": "tsc"
         },
         {
-            "name": "newman",
+            "name": "newman newman-reporter-htmlextra",
             "command": "newman"
         },
         {
@@ -337,6 +337,10 @@
         {
             "name": "yarn",
             "command": "yarn"
+        },
+        {
+            "name": "renovate",
+            "command": "renovate"
         }
     ],
     "mongodb": {

@@ -50,16 +50,32 @@ Describe "Rust" {
             "cargo --version" | Should -ReturnZeroExitCode
         }
 
-        It "cargo-clippy" {
-            "cargo-clippy --version" | Should -ReturnZeroExitCode
+        It "cargo-quickinstall" {
+            "cargo-quickinstall --version" | Should -ReturnZeroExitCode
         }
 
-        It "Cargo audit" {
-            "cargo audit --version" | Should -ReturnZeroExitCode
+        It "Cargo deny" {
+            "cargo deny --version" | Should -ReturnZeroExitCode
         }
 
-        It "Cargo outdated" {
-            "cargo outdated --version" | Should -ReturnZeroExitCode
+        It "Cargo udeps" {
+            "cargo udeps --version" | Should -ReturnZeroExitCode
+        }
+        
+        It "Cargo grcov" {
+            "cargo grcov --version" | Should -ReturnZeroExitCode
+        }
+        
+        It "Cargo udeps" {
+            "cargo udeps --version" | Should -ReturnZeroExitCode
+        }
+        
+        It "Diesel cli" {
+            "diesel --version" | Should -ReturnZeroExitCode
+        }
+
+        It "GrCov" {
+            "grcov --version" | Should -ReturnZeroExitCode
         }
     }
 }

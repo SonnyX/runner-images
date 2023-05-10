@@ -20,10 +20,11 @@ source $CARGO_HOME/env
 rustup component add rustfmt clippy
 
 if isUbuntu22; then
-    cargo install bindgen-cli cbindgen cargo-audit cargo-outdated
+    cargo install bindgen-cli cbindgen cargo-quickinstall diesel_cli
 else
-    cargo install --locked bindgen-cli cbindgen cargo-audit cargo-outdated
+    cargo install --locked bindgen-cli cbindgen cargo-quickinstall diesel_cli
 fi
+cargo quickinstall cargo-deny cargo-udeps grcov
 
 # Cleanup Cargo cache
 rm -rf ${CARGO_HOME}/registry/*
